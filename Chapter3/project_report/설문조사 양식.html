@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="author" content="이현규">
+  <title>설문조사 양식</title>
+</head>
+<body>
+  <header>
+    <h1>설문조사 양식</h1>
+    <ul>
+      <li><a href="#PII">개인 정보</a></li>
+      <li><a href="#Survey">설문</a></li>
+      <li><a href="#other">기타</a></li>
+    </ul>
+  </header>
+  <hr>
+  <main>
+    <fieldset>
+
+      <legend><h2 id="PII">개인 정보</h2></legend>
+      <label for="name">이름</label>
+      <input name="name" type="text" id="name">
+      <br>
+      <label for="age">나이</label>
+      <input name="age" type="number" id="age" min="1" max="120">
+      <br>
+      <label for="sex">성별</label>
+    <select name="sex" id="sex">
+      <option value="man">남성</option>
+      <option value="woman">여성</option>
+    </select>
+    <br>
+      <label for="email">이메일</label>
+      <input type="email" name="email">
+      <br>
+      <label for="local">사는 곳</label>
+      <input type="text" name="local">
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend><h2 id="Survey">설문 문항</h2></legend>
+    <p>당신의 관심사를 선택해주세요.</p>
+    <ul>
+      <li>
+        <input type="checkbox" name="interest" id="sports">
+        <label for="sports">스포츠</label>
+      </li>
+      <li>
+        <input type="checkbox" name="interest" id="music">
+        <label for="music">음악</label>
+      </li>
+      <li>        
+        <input type="checkbox" name="interest" id="movie">
+        <label for="movie">음악</label>
+      </li>
+    </ul>
+
+    </fieldset>
+    
+    <fieldset>
+
+    <legend><h2 id="other"><label for="other">기타의견</label></h2></legend>
+    <textarea name="other" id="other" cols="50" rows="5"></textarea>
+    <br>
+    <input type="submit">
+    
+    </fieldset>
+  </main>
+  <hr>
+  <footer>
+    <p>&copy;2025 설문조사 양식</p>
+  </footer>
+</body>
+</html>

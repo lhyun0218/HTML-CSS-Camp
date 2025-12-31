@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>양식 만들고 입력 정보 보내기</title>
+</head>
+<body>
+    <form action="none.com" method="post"> <!-- action 속성은 데이터를 보낼 URL을 지정하고 method 속성은 전송 방식을 지정합니다 (get, post) -->
+
+      <label for="name">이름</label> <!-- for 속성은 연결된 입력 요소의 id를 지정합니다 -->
+      <input id="name" type="text" name="name" placeholder="이름"> <!-- name 속성은 서버로 전송될 때 사용되는 키를 지정합니다 -->
+      <br>
+      <label for="age">나이</label>
+      <input id="age" type="number" name="age" placeholder="20">
+      <br>
+      <label for="character">성격</label>
+      <textarea name="character" id="character" cols="30" rows="10" placeholder="성격에 대해서 자유롭게 알려주세요.."></textarea> <!-- textarea 태그는 여러 줄의 텍스트 입력을 받습니다 -->
+      <br>
+      <input type="submit"> <!-- submit 타입의 입력 요소는 폼 데이터를 서버로 전송하는 버튼을 만듭니다 -->
+    </form>
+</body>
+</html>

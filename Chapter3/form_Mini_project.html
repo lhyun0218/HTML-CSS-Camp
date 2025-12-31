@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>설문조사 양식</title>
+</head>
+<body>
+  <header>
+  <h1>설문조사 양식</h1>
+  <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+  </header>
+  <hr>
+  <main>
+  <form action="none.com" method="post">
+    <fieldset>
+      <legend>개인정보</legend>
+
+      <label for="name">이름</label>
+      <input name="name" type="text" id="name" placeholder="본명을 입력하세요">
+      <br>
+      <label for="email">이메일</label>
+      <input name="email" type="email" id="email" placeholder="이메일 주소를 입력하세요">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>설문</legend>
+
+      <p>연령대가 어떻게 되십니까?</p>
+      <input type="radio" name="age" id="teen"> <!-- radio는 각각 항목의 name을 통일하여야 함-->
+      <label for="teen">10대</label>
+      <input type="radio" name="age" id="twenty">
+      <label for="twendy">20대</label>
+      <input type="radio" name="age" id="thirty">
+      <label for="thirty">30대</label>
+      <input type="radio" name="age" id="fourty">
+      <label for="fourty">40대</label>
+      <input type="radio" name="age" id="fifty">
+      <label for="fifty">50대</label>
+      <input type="radio" name="age" id="other">
+      <label for="other">그외</label>
+      
+      <p>사용자님의 지역은 어디십니까?</p>
+      <input type="radio" name="local" id="seoul">
+      <label for="seoul">서울특별시</label>
+      <input type="radio" name="local" id="busan">
+      <label for="busan">부산광역시</label>
+      <input type="radio" name="local" id="daegu">
+      <label for="daegu">대구광역시</label>
+      <input type="radio" name="local" id="incheon">
+      <label for="incheon">대전광역시</label>
+      <input type="radio" name="local" id="ulsan">
+      <label for="ulsan">울산광역시</label>
+      <input type="radio" name="local" id="gwangju">
+      <label for="gwangju">광주광역시</label>
+      <input type="radio" name="local" id="gyeonggi">
+      <label for="gyeonggi">경기도</label>
+      <input type="radio" name="local" id="gyeongsang">
+      <label for="gyeongsang">경상도</label>
+      <input type="radio" name="local" id="jeonla">
+      <label for="jeonla">전라도</label>
+      <input type="radio" name="local" id="gwangwon">
+      <label for="gwangwon">강원도</label>      
+
+      <p>학원 선택 시 그 기준은 어떻게 되시나요?</p>
+      <input type="checkbox" name="academy" id="position"> <!-- checkbox도 각각 항목의 name을 통일하여야 함-->
+      <label for="position">위치</label>
+      <input type="checkbox" name="academy" id="price">
+      <label for="price">학원비</label>
+      <input type="checkbox" name="academy" id="teacher">
+      <label for="teacher">강사</label>
+      <input type="checkbox" name="academy" id="infra">
+      <label for="infra">시설</label>
+
+    </fieldset>
+
+    <fieldset>
+      <textarea rows="3" cols="30" name="comment"></textarea>
+      <legend>기타의견</legend>
+      <br>
+      <input type="submit">
+    </fieldset>
+  </form>
+  </main>
+  <hr>
+  <footer>
+  <p>입력하느라 수고하셨습니다.</p>
+  </footer>
+</body>
+</html>
