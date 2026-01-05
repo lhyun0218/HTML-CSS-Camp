@@ -1,0 +1,95 @@
+/* 전체적인 세팅부터 */
+* {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  background-color: rgb(108, 134, 179);
+}
+
+/* 스크린 크기 조정 */
+.Chat-screen {
+  height: calc(100% - 120px);
+}
+
+/* 유저 정보 표시되는 부분 */
+.user{
+  background-color: #4d4f5e;
+  padding: 16px;
+  height: 80px;
+  box-shadow: 0 1px 10px #515151;
+}
+
+.user_column{
+  float: left;
+}
+.user_pic{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.user_nick, .user_count{
+  margin: 5px;
+  color: white;
+}
+
+.user_count{
+  font: 12px;
+  color: rgb(182, 182, 182);
+}
+
+.Chat-form {
+  height: 120px;
+  background-color: #dfe5e8;
+}
+
+.Chat-form_field{
+  height: 120px;
+  position: relative;
+}
+
+.Chat-form_msg{
+  width: calc(100% - 150px);
+  height: 80px;
+  border: none;
+  resize: none;
+  font-size: 24px;
+  padding: 10px;
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15px;
+}
+
+.Chat-form_msg{
+  outline: none;
+}
+.chat-form_bt {
+  width: 100px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #4e82dc;
+  font-size: 18px;
+  float: right;
+  margin-right: 20px;
+  transform: translateY(25%);
+  color: white;
+  border: none
+}
+
+.chat-form_bt:active{
+  background-color: #2c569f;
+}

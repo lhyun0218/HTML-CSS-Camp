@@ -1,0 +1,39 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(225, 239, 255);
+  width: 80%;
+  margin: auto;
+}
+
+.main{
+  width: 80%;
+  box-shadow: 0 0 5px 1px #a9a9a9;
+  border-radius: 10px;
+}
+
+.profile_head {
+      text-align: center;
+}
+
+
+#header h1 { 
+  color: rgb(26, 26, 158);
+  text-align: center;
+}
+
+.main {
+  background-color: white;
+  width: 80%;
+  padding: 60px;
+  margin: auto;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 150px;
+}
+

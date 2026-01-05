@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equtiv="x-ua-compatible" content="ie-edge">
+  <title>색깔을 지정하는 다양한 방법</title>
+  <style>
+    /* 색상을 지정 할 때 공통점은 색상을 조합한다 그리고 투명도 조절도 가능 ! ! */
+    p#one {
+      color: rgb(0%, 50%, 0%); /* RGB 값으로 텍스트 색 지정 */
+    }
+    p#two {
+      color: rgba(0%, 50%, 0%, 1); /* RGBA 값 3개 다음으로 4번 째는 투명도 */
+    }
+    p#three {
+     color: hsl(300, 50%, 50%); /* hsl은 각도를 이용하여 색 지정 0 - 360도, 채도, 조도 */
+    }
+    p#four {
+      /*
+        0 1 2 3 4 5 6 7 8 9 A B C D E F
+        10 11 12 13 14
+        00 - FF : 255
+      */
+      color: #FF00FF99; /* 제일 보편적인 방법 인듯 6가지 이후 2가지는 투명도 */
+    }
+  </style>
+</head>
+<body>
+  <p id="one">향긋한 아메리카노와 함께 여는 아침</p>
+  <p id="two">향긋한 아메리카노와 함께 여는 아침</p>
+  <p id="three">향긋한 아메리카노와 함께 여는 아침</p>
+  <p id="four">향긋한 아메리카노와 함께 여는 아침</p>
+</body>
+</html>
